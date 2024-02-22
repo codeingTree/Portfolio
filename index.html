@@ -8,12 +8,16 @@
   <title>Portfolio</title>
   <!-- Google Fonts Link -->
   <!-- Font 1 -->
-  <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Poppins:ital,wght@0,400;0,700;1,800&family=Protest+Revolution&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kristi&family=Poppins:ital,wght@0,400;0,700;1,800&family=Protest+Revolution&family=Quicksand:wght@700&display=swap"
+    rel="stylesheet">
   <!-- Font 2 -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   <!-- Link 3 -->
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fredoka:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fredoka:wght@300..700&family=Pacifico&display=swap"
+    rel="stylesheet">
 
   <!-- box icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -133,7 +137,7 @@
         <div class="protfolio-layer">
           <h4>FoodZone</h4>
           <p>Hungry? <br> FoodZone ensure your food at your doorstep</p>
-          <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+          <a href="https://codeingtree.github.io/FoodZone/" target="_blank"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
@@ -142,7 +146,8 @@
         <div class="protfolio-layer">
           <h4>Calculator</h4>
           <p>Calculate success with precision: our advanced calculator, your key tool.</p>
-          <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+          <a href="https://codeingtree.github.io/Basic-Calculator/" target="_blank"><i
+              class='bx bx-link-external'></i></a>
         </div>
       </div>
 
@@ -181,17 +186,21 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span> </h2>
 
-    <form action="#">
+    <form action="https://api.web3forms.com/submit" method="POST">
       <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Adress">
+        <input type="text" placeholder="Full Name" name="text">
+        <input type="email" placeholder="Email Adress" name="email">
       </div>
+
       <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
+        <!--  -->
+        <input type="hidden" name="access_key" value="e9b288d0-e823-4e45-b071-622114e87bff">
+        <input type="number" placeholder="Mobile Number" name="number">
+        <input type="text" placeholder="Email Subject" name="email">
       </div>
       <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      <input type="submit" value="Send Message" class="btn" name="input">
     </form>
   </section>
 
@@ -214,6 +223,8 @@
 
   <!-- custom js -->
   <script src="js/script.js"></script>
+  <!-- Web3 Link to Contact -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
